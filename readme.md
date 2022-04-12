@@ -28,7 +28,7 @@ $ pip3 install -r requirements.txt
 2. Выбираем Kate Mobile / Choose Kate Mobile:
 ![1.2](img/2.png)
 3. Разрешаем доступ через свой аккаунт / Allow access through your account
-4. Скопируйте часть адресной строки от `access_token=` до `&expires_in` / Copy the part of the address bar from `access_token=` to `&expires_in`
+4. Копируем часть адресной строки от `access_token=` до `&expires_in` / Copy the part of the address bar from `access_token=` to `&expires_in`
 > Никому не сообщайте эти данные / Don't share this tokens with anyone
 
 ### Spotify
