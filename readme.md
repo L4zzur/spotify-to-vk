@@ -7,12 +7,12 @@
 
 1. Склонировать репозиторий / Clone repository:
 ```bash
-$ git clone https://github.com/L4zzur/spotify-to-telegram.git
+$ git clone https://github.com/L4zzur/spotify-to-vk.git
 ```
 
-2. Перейти в папку "spotify-to-telegram" / Go to "spotify-to-telegram" folder:
+2. Перейти в папку "spotify-to-vk" / Go to "spotify-to-vk" folder:
 ```bash
-$ cd spotify-to-telegram
+$ cd spotify-to-vk
 ```
 
 3. Установить зависимости с помощью pip / Install libraries using pip:
@@ -22,7 +22,7 @@ $ pip3 install -r requirements.txt
 
 # Настройка / Setting up:
 
-### Telegram:
+### VK:
 
 1. Переходим на [vkhost.github.io](https://vkhost.github.io/) / Go to [vkhost.github.io](https://vkhost.github.io/)
 2. Выбираем Kate Mobile / Choose Kate Mobile:
@@ -57,5 +57,4 @@ $ python3 setup.py
 ```bash
 $ python3 main.py
 ```
-2. Проходим авторизацию Telegram / Pass to the Telegram authorization 
-3. Радуемся! / Enjoy!
+2. Радуемся! / Enjoy!
