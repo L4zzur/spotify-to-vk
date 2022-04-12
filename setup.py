@@ -12,7 +12,8 @@ else:
 print(vk_start1)
 print(vk_start2)
 access_token = input(access_token_text)
-config.write(f'# VK\nTOKEN = "{access_token}"\n# Spotify\n')
+status = input(status_text)
+config.write(f'# VK\nTOKEN = "{access_token}"\nstatus = "{status}"\n# Spotify\n')
 
 # Spotify
 print(spotify_start1)
