@@ -1,8 +1,8 @@
 # VK
 vk_start1 = '------ Настройка VK ------'
-vk_start2 = 'access token получать на https://vkhost.github.io/'
+vk_start2 = 'Access token получать на https://vkhost.github.io/'
 access_token_text = 'Введите access token (!!! Выбирать Kate Mobile !!!): '
-status_text = 'Введите статус, который будет поставлен при условии, что spotify не работает: '
+status_text = 'Введите статус, который будет поставлен при условии, что Spotify не работает: '
 
 #Spotify
 spotify_start1 = '------ Настройка Spotify ------'
