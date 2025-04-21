@@ -1,60 +1,62 @@
 # Spotify to VK Bio
 
-#### Отображает в статусе VK тот трек, который сейчас играет в Spotify / Display your current listen to a song from Spotify in the VK bio.
+> **⚠️ This project is no longer maintained or updated, as I no longer use VK.  
+> Please check out my Telegram version instead: [spotify-to-telegram](https://github.com/L4zzur/spotify-to-telegram)**
+
+Display your currently playing Spotify song in your VK bio.
 ![1.1](img/1.png)
 
-# Установка / Installation:
+## Installation
 
-1. Склонировать репозиторий / Clone repository:
+1. Clone the repository:
 ```bash
-$ git clone https://github.com/L4zzur/spotify-to-vk.git
+git clone https://github.com/L4zzur/spotify-to-vk.git
 ```
 
-2. Перейти в папку "spotify-to-vk" / Go to "spotify-to-vk" folder:
+2. Navigate to the "spotify-to-vk" directory:
 ```bash
-$ cd spotify-to-vk
+cd spotify-to-vk
 ```
 
-3. Установить зависимости с помощью pip / Install libraries using pip:
+3. Install the required dependencies:
 ```bash
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-# Настройка / Setting up:
-
+## Configuration
 ### VK:
 
-1. Переходим на [vkhost.github.io](https://vkhost.github.io/) / Go to [vkhost.github.io](https://vkhost.github.io/)
-2. Выбираем Kate Mobile / Choose Kate Mobile:
+1. Go to [vkhost.github.io](https://vkhost.github.io/)
+2. Select "Kate Mobile".
 ![1.2](img/2.png)
-3. Разрешаем доступ через свой аккаунт / Allow access through your account
-4. Копируем часть адресной строки от `access_token=` до `&expires_in` / Copy the part of the address bar from `access_token=` to `&expires_in`
-> Никому не сообщайте эти данные / Don't share this tokens with anyone
+3. Authorize access using your VK account.
+4. Copy the part of the URL from `access_token=` up to `&expires_in`.
+> Never share these tokens with anyone.
 
 ### Spotify
-1. Переходим на [Spotify Dashboard](https://developer.spotify.com/dashboard/) / Go to [Spotify Dashboard](https://developer.spotify.com/dashboard/)
-2. Авторизуемся и создаем новое приложение / Log in and create a new application 
+1. Go to the [Spotify Dashboard](https://developer.spotify.com/dashboard/).
+2. Log in and create a new application.
 ![1.3](img/3.png)
-3. Переходим в созданное приложение, а затем в настройки / Go to the created application, and then in settings
+3. Open your newly created application, then go to its settings.
 ![1.4](img/4.png)
-4. Изменяем строчку Redirect URIs на http://localhost:8888/callback / Changing the Redirect URIs line to http://localhost:8888/callback
+4. Set the Redirect URI to `http://localhost:8888/callback`.
 ![1.5](img/5.png)
-> Никому не сообщайте эти данные / Don't share this tokens with anyone
+> Never share these tokens with anyone.
 
 ### Python
-1. Заходим в директорию со скриптом (шаг 2 из установки) / Go to the script directory (step 2 from the installation)
-2. Запускаем скрипт для настройки / Run the script to configure:
+1. Change to the script directory (as in step 2 of Installation).
+2. Run the setup script:
 ```bash
-$ python3 setup.py
+python3 setup.py
 ```
-4. Заполняем все нужные данные, которые мы получили ранее, как просит скрипт / Fill all the necessary data that we received earlier, as requested by the script.
-5. Авторизуем наше приложение Spotify через ссылку, которую вернул скрипт. Либо же можно заполнить конфиг самостоятельно в файле config.py / Authorizing our Spotify application through the link that the script returned. Or you can fill in the config yourself in the config.py file
+3. Enter all the required information obtained earlier when prompted by the script.
+4. Authorize your Spotify application via the link provided by the script, or manually fill in the configuration in `config.py`.
 
 ![1.6](img/6.png)
 
-# Запуск / Run
-1. Запускаем скрипт / Run script:
+## Running
+1. Start the script:
 ```bash
-$ python3 main.py
+python3 main.py
 ```
-2. Радуемся! / Enjoy!
+2. Enjoy!
